@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+body
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+/*Setting the div element holding our list central to the page*/
+#page
+{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+/*The actual unordered list containing our list items will have no bullet
+points*/
+ul
+{
+	padding: 0px;
+	list-style-type: none;
+}
+
+/*This is the image we are using as a button to add to the list*/
+#plussign
+{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	top: 160px;
+}
+
+/* Pseudo-class used to act upon the hover of our button, giving it
+more of a feel.*/
+#plussign:hover
+{
+  border: 2px solid black;
+}
+
+
+/* When a list items class is set to complete, it's CSS will change according
+to the style rules below.*/
+.complete
+{
+	background-color: #373E40;
+	color: #969ca5;
+}
+
+/*List items styled that aren't complete*/
+li
+{
+	text-align: left;
+  padding-top: 18px;
+  padding-bottom: 10px;
+	padding-left: 40px;
+	height: 30px;
+	background-color: #ff8080;
+	border: 1px black solid;
+	margin-bottom: 1px;
+}
+
+/* This selects the form we are using which allows users to input their list items.*/
+#newItemForm{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* This selector uses the 'type attribute to find the text input we are using to input
+new list items for the user' These rules are only applied when the element is focused.*/
+input[type=text]:focus {
+    background-color: #29d889;
+}
+
+input[type=text]{
+	height: 50px;
+	width: 70%;
+	padding-left: 1.5%;
+	border-radius: 5px;
+}
+
+/* Tese rules are applied to our 'Add Item' button*/
+input[type=submit]{
+	margin-top: 3%;
+	height: 50px;
+	width: 40%;
+	border-radius: 5px;
+}
